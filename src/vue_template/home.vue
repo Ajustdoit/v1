@@ -61,20 +61,6 @@
         color: #fff;
         text-indent: 10px;
     }
-    .input_g button{
-        line-height: 24px;
-        padding: 0 10px;
-        background-color: #fff;
-        border: 1px solid #ffc65c;
-        cursor: pointer;
-    }
-    .input_g button:hover{
-        background-color: #141f34;
-        color: #fff;
-    }
-    .input_g button:active{
-        background-color: #ff3d25;
-    }
     .content{
         font-size: 12px;
         color: #1da568;

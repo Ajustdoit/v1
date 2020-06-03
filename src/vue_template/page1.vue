@@ -1,40 +1,59 @@
 <template>
     <div>
-      {{massage}}
+        <p>
+            <button @click="UpdataApi">刷新</button>
+        </p>
+        <ul v-for="(item,index) in massage">
+            <li><span>{{(index+1)+":----"}}{{item}}</span></li>
+        </ul>
     </div>
 </template>
 
 <script>
     export default {
         name: "page1",
-        data:function () {
-            return{
-                massage:""
+        data: function () {
+            return {
+                massage: []
             }
         },
-        methods:{
-          api:function () {
-              this.$http.get('http://hn216.api.yesapi.cn/', {
-                      params: {
-                          s:"App.Hello.World",
-                          name:"呵呵",
-                          app_key: "8F05A350B2A381AF6DB7D378F1CEF5D5",
-                      }
-                  },
-              ).then(function (res) {
-                  console.log(res);
-                  this.massage=res.body.msg
-              },function (res) {
-                  alert("失败");
-              })
-          }
+        methods: {
+            api: function () {
+                this.$http.get('http://hn216.api.yesapi.cn/', {
+                        params: {
+                            s: "App.Common_Joke.RandOne",
+                            num: 10,
+                            app_key: "8F05A350B2A381AF6DB7D378F1CEF5D5",
+                        }
+                    },
+                ).then(function (res) {
+                    console.log(res);
+                    this.massage = res.body.data.joke[0];
+                    console.log(this.massage);
+                }, function (res) {
+                    alert("失败");
+                })
+            },
+            UpdataApi:function () {
+                this.massage=[];
+                this.api()
+            }
         },
-        created:function () {
+        created: function () {
             this.api()
         }
     }
 </script>
 
-<style scoped>
+<style lang="less" scoped>
+    p {
+        margin-bottom: 20px;
+    }
 
+    li {
+        font-size: 12px;
+        margin-bottom: 20px;
+        color: #1da568;
+        list-style: none;
+    }
 </style>
