@@ -1,7 +1,7 @@
 <template>
     <div class="menu">
-        <router-link to="home">主页</router-link>
-        <router-link to="page1">页面1</router-link>
+        <router-link to="home">周公解梦</router-link>
+        <router-link to="page1">hello</router-link>
         <router-link to="page2">页面2</router-link>
     </div>
 </template>

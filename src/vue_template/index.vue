@@ -33,7 +33,7 @@
         data: function () {
             return {
                 d:{
-                    massage: "前端自动化构建",
+                    massage: "自制小工具",
                     w:"",
                     t:"",
                     p:"",
@@ -56,18 +56,18 @@
                     },
                 ).then(function (res) {
                     console.log(res);
-                    this.w=res.body.tem;
-                    this.t=res.body.wea;
-                    this.p=res.body.air_tips;
-                    this.r=res.body.humidity;
-                    this.l=res.body.city
+                    this.d.w=res.body.tem;
+                    this.d.t=res.body.wea;
+                    this.d.p=res.body.air_tips;
+                    this.d.r=res.body.humidity;
+                    this.d.l=res.body.city
                 },function (res) {
 
                 })
             },
         },
         created:function () {
-            // this.api()
+            this.api()
         }
     }
 
@@ -98,6 +98,11 @@
     }
     .w{
         padding: 0 20px;
+    }
+    .w>span{
+        margin-right: 30px;
+        font-size: 12px;
+
     }
     section {
         width: 100%;
