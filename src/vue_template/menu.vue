@@ -2,7 +2,7 @@
     <div class="menu">
         <router-link to="home">周公解梦</router-link>
         <router-link to="page1">每日一笑</router-link>
-        <router-link to="page2">页面2</router-link>
+        <router-link to="page2">在线音乐</router-link>
     </div>
 </template>
 
