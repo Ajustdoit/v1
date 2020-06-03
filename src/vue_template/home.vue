@@ -54,13 +54,6 @@
         font-size: 12px;
     }
 
-    .input_g input {
-        line-height: 24px;
-        border: 1px solid #fff;
-        background-color: transparent;
-        color: #fff;
-        text-indent: 10px;
-    }
     .content{
         font-size: 12px;
         color: #1da568;
