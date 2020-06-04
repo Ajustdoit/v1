@@ -73,7 +73,7 @@
                 this.$http.get('http://hn216.api.yesapi.cn/', {
                         params: {
                             s: "App.Music.Search",
-                            app_key: "8F05A350B2A381AF6DB7D378F1CEF5D5",
+                            app_key: this.appKey,
                             input: this.ip,
                             filter: "name",
                             website: this.f_m

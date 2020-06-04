@@ -29,7 +29,7 @@
                       params: {
                           dream_keyword:this.ip,
                           s:"App.Common_Dream.Explain",
-                          app_key: "8F05A350B2A381AF6DB7D378F1CEF5D5",
+                          app_key: this.appKey,
                       }
                   },
               ).then(function (res) {
