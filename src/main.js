@@ -32,7 +32,7 @@ const router = new VueRouter({
     routes
 });
 
-new Vue({
+let vm=new Vue({
     el: "#app",
     // components: {
     //     app
