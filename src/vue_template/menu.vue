@@ -4,6 +4,8 @@
         <router-link to="page1">每日一笑</router-link>
         <router-link to="page2">在线音乐</router-link>
         <router-link to="page3">美图</router-link>
+        <router-link to="video">趣味视频</router-link>
+        <router-link to="fund">基金数据</router-link>
     </div>
 </template>
 

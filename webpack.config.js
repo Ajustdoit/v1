@@ -46,5 +46,16 @@ module.exports={
             filename: "./css/[name].css"
         }),
         new VueLoaderPlugin()
-    ]
+    ],
+    devServer: {
+        port: '8888',
+        proxy: {
+            '/cfapi': {
+                target: 'http://localhost:3000',
+                pathRewrite: { '^/cfapi': '/' },
+                changeOrigin: true,
+            },
+
+        }
+    }
 };
