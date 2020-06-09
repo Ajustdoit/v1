@@ -55,6 +55,11 @@ module.exports={
                 pathRewrite: { '^/cfapi': '/' },
                 changeOrigin: true,
             },
+            '/videoListApi':{
+                target: 'http://baobab.kaiyanapp.com',
+                pathRewrite: { '^/videoListApi': '/api' },
+                changeOrigin: true,
+            }
 
         }
     }

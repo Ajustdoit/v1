@@ -6,6 +6,7 @@
         <router-link to="page3">美图</router-link>
         <router-link to="video">趣味视频</router-link>
         <router-link to="fund">基金数据</router-link>
+        <router-link to="vuex_page">vuex练习</router-link>
     </div>
 </template>
 

@@ -19,7 +19,7 @@
             },
         },
         created: function () {
-            this.api()
+            // this.api()
         }
     }
 
