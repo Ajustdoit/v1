@@ -1,5 +1,6 @@
 <template>
     <div>
+        {{$store.state.name}}
     </div>
 </template>
 
@@ -7,8 +8,7 @@
     export default {
         name: "vuex_page",
         mounted(){
-            console.log("test store",this.$store.state.name);
-
+            console.log(this.$store.state.name);
         }
     }
 </script>
